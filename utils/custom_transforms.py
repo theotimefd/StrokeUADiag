@@ -3,7 +3,10 @@ import random
 
 import torch
 from monai import transforms
-
+from collections.abc import Hashable, Mapping, Sequence
+from typing import TypeVar, Union
+from monai.config import DtypeLike, KeysCollection
+from monai.config.type_definitions import NdarrayOrTensor
 
 
 class Get2DSlice(transforms.Transform):
@@ -173,3 +176,18 @@ class ScaleIntensityFromHistogramPeak(transforms.Transform):
         data = torch.from_numpy(data_np) if is_tensor else data_np
 
         return data
+
+
+class SelectChannelsd(transforms.MapTransform):
+    """
+    Custom MONAI transform that selects specific channels from the input data.
+    """
+    def __init__(self, keys: KeysCollection, selected_channels: list, allow_missing_keys: bool = False):
+        super().__init__(keys, allow_missing_keys)
+        self.selected_channels = selected_channels
+
+    def __call__(self, data: Mapping[Hashable, NdarrayOrTensor]) -> dict[Hashable, NdarrayOrTensor]:
+        d = dict(data)
+        for key in self.key_iterator(d):
+            d[key] = d[key][self.selected_channels, ...] # expected shape (C, H, W, D)
+        return d

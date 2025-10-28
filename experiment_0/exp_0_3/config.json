@@ -1,0 +1,64 @@
+{
+    "experiment_name": "experiment_0",
+    "sub_experiment_name": "exp_0_3",
+    "description": "3D classification on SOOP anomaly detection",
+    "pipeline": ["train_classification", "test_classification"],
+    "spatial_dims": 3,
+    "num_channels": 2,
+    "selected_channels": [0,2],
+    "image_size": 128,
+    "root_dir":"/bettik/PROJECTS/pr-gin5_aini/fehrdelt/",
+    "dataset":{
+        "name": "soop",
+        "batch_size": 2,
+        "num_workers": 16
+    },
+    "train_transforms": {
+        "_target_": "monai.transforms.Compose",
+        "transforms": [
+        {
+            "_target_": "monai.transforms.LoadImaged", "keys": ["img"], "image_only": true
+        },
+        {
+            "_target_": "monai.transforms.EnsureChannelFirstd", "keys": ["img"]
+        },
+        {
+            "_target_": "utils.custom_transforms.SelectChannelsd", "keys": ["img"], "selected_channels": "@selected_channels"
+        },
+        {
+            "_target_": "monai.transforms.RandAffined", "keys": ["img"], "prob": 0.5, "rotate_range": [0.1, 0.1, 0.1]
+        },
+        {
+            "_target_": "monai.transforms.RandScaleCropd", "keys": ["img"], "roi_scale":0.9, "max_roi_scale":1.1, "random_size":true
+        },
+        {
+            "_target_": "monai.transforms.ResizeWithPadOrCropd", "keys": ["img"], "spatial_size":["@image_size", "@image_size", "@image_size"]
+        },
+        {
+            "_target_": "monai.transforms.RandFlipd", "keys": ["img"], "prob": 0.5, "spatial_axis": 0
+        }]
+    },
+    "val_transforms": {
+        "_target_": "monai.transforms.Compose",
+        "transforms": [
+        {
+            "_target_": "monai.transforms.LoadImaged", "keys": ["img"], "image_only": true
+        },
+        {
+            "_target_": "monai.transforms.EnsureChannelFirstd", "keys": ["img"]
+        },
+        {
+            "_target_": "utils.custom_transforms.SelectChannelsd", "keys": ["img"], "selected_channels": "@selected_channels"
+        },
+        {
+            "_target_": "monai.transforms.ResizeWithPadOrCropd", "keys": ["img"], "spatial_size":["@image_size", "@image_size", "@image_size"]
+        }]
+    },
+    "network_def": {
+        "_target_": "monai.networks.nets.DenseNet121",
+        "spatial_dims": "@spatial_dims",
+        "in_channels": "@num_channels",
+        "out_channels": 2
+    },
+    "max_epochs": 500
+}

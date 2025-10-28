@@ -1,0 +1,17 @@
+Launching classification training: experiment_0/exp_0_1 with 1 gpus
+Using 0
+saved new best metric model
+current epoch: 2 current accuracy: 0.7400
+best accuracy: 0.7400 at epoch: 2
+saved new best metric model
+current epoch: 4 current accuracy: 0.7600
+best accuracy: 0.7600 at epoch: 4
+saved new best metric model
+current epoch: 8 current accuracy: 0.8200
+best accuracy: 0.8200 at epoch: 8
+saved new best metric model
+current epoch: 18 current accuracy: 0.8400
+best accuracy: 0.8400 at epoch: 18
+saved new best metric model
+current epoch: 26 current accuracy: 0.8600
+best accuracy: 0.8600 at epoch: 26
