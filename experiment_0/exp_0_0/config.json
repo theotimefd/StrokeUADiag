@@ -2,7 +2,7 @@
     "experiment_name": "experiment_0",
     "sub_experiment_name": "exp_0_0",
     "description": "3D classification on SOOP anomaly detection",
-    "pipeline": ["train_classification", "test_classification"],
+    "pipeline": ["test_classification"],
     "spatial_dims": 3,
     "num_channels": 5,
     "selected_channels": [0,1,2,3,4],

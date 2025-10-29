@@ -78,7 +78,7 @@ def launch_test(args):
 
 
 
-    test_transforms = define_instance(args, "test_transforms")
+    test_transforms = define_instance(args, "val_transforms")
     test_ds = CacheDataset(data=test_files, transform=test_transforms)
 
 
@@ -95,6 +95,8 @@ def launch_test(args):
     )
 
     model = define_instance(args, "network_def").to(device)
+    model.load_state_dict(torch.load(f"{ROOT_DIR}StrokeUADiag/{EXPERIMENT_NAME}/{SUB_EXPERIMENT_NAME}/models/{SUB_EXPERIMENT_NAME}_best_model.pth", map_location=device))
+    model.eval()
 
     optimizer = torch.optim.Adam(params=model.parameters(), lr=1e-5 * world_size)
     

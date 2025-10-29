@@ -1,17 +1,82 @@
-Launching classification training: experiment_0/exp_0_0 with 1 gpus
+Launching classification testing: experiment_0/exp_0_0 with 1 gpus
 Using 0
-saved new best metric model
-current epoch: 2 current accuracy: 0.7400
-best accuracy: 0.7400 at epoch: 2
-saved new best metric model
-current epoch: 6 current accuracy: 0.7800
-best accuracy: 0.7800 at epoch: 6
-saved new best metric model
-current epoch: 8 current accuracy: 0.8000
-best accuracy: 0.8000 at epoch: 8
-saved new best metric model
-current epoch: 12 current accuracy: 0.8400
-best accuracy: 0.8400 at epoch: 12
-saved new best metric model
-current epoch: 24 current accuracy: 0.8800
-best accuracy: 0.8800 at epoch: 24
+test_outputs: tensor([[19.8445,  1.3533],
+        [20.1911,  2.4553]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.1893,  3.0006],
+        [21.0430,  1.5221]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[18.2546,  2.5394],
+        [19.6795,  0.8272]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[25.1219,  0.5155],
+        [19.9152,  2.3410]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.2630,  1.3107],
+        [19.5323,  1.3658]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[19.6438,  1.2635],
+        [19.7636,  1.4209]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[20.4697,  2.9180],
+        [19.9437,  1.3087]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[19.8201,  2.0901],
+        [19.1979,  0.8748]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[22.7331, -0.2893],
+        [19.0511,  1.4769]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.3175,  1.2409],
+        [23.7129,  2.1162]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[23.0408,  1.0784],
+        [24.6607,  1.8301]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.2471,  1.3941],
+        [19.0335,  1.4525]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.3559,  0.7679],
+        [19.8365,  0.8692]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.2915,  0.4277],
+        [25.0744,  0.2540]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[20.3251,  1.0716],
+        [17.2925,  1.7829]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[20.0636,  0.6686],
+        [19.5418,  1.0385]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[19.1058,  1.3171],
+        [21.5438, -0.1469]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.0340,  0.6947],
+        [20.5117,  2.5757]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[20.6105, -0.3476],
+        [22.3907,  0.6091]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.4725,  1.0718],
+        [18.6070,  1.5001]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[19.1161,  2.1445],
+        [21.2044,  2.9389]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[26.4158, -0.7685],
+        [19.8430,  1.1427]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[19.2143,  1.1538],
+        [19.2090,  1.5557]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[19.8009,  0.7778],
+        [21.9906,  1.4205]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[20.4006,  0.4738],
+        [17.5878,  1.4263]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[17.6973,  1.8194],
+        [19.4445,  1.1360]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0, 0], device='cuda:0')
+test_outputs: tensor([[21.3405,  0.2620]], device='cuda:0')
+test_outputs.argsort(dim=1): tensor([0], device='cuda:0')
