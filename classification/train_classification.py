@@ -67,18 +67,17 @@ def launch_train(args):
     torch.autograd.set_detect_anomaly(False)
 
 
+
     train_df = pd.read_csv(ROOT_DIR+f"StrokeUADiag/data_splits_lists/{args.dataset['name']}/train.csv")
-    train_files = [{"img": img, "label": label} for img, label in zip(train_df["participant_id"], train_df["high_nihss"])]
+    train_files = [{"img": img_path, "label": label} for img_path, label in zip(train_df["image_path"], train_df["high_nihss"])]
     # replace participant_id with full image path
     for item in train_files:
-        item["img"] = ROOT_DIR+"datasets/StrokeUADiag_classification_inputs/stacked_"+item["img"]+".nii.gz"
         item["label"] = int(item["label"])
 
     val_df = pd.read_csv(ROOT_DIR+f"StrokeUADiag/data_splits_lists/{args.dataset['name']}/val.csv")
-    val_files = [{"img": img, "label": label} for img, label in zip(val_df["participant_id"], val_df["high_nihss"])]
+    val_files = [{"img": img_path, "label": label} for img_path, label in zip(val_df["image_path"], val_df["high_nihss"])]
 
     for item in val_files:
-        item["img"] = ROOT_DIR+"datasets/StrokeUADiag_classification_inputs/stacked_"+item["img"]+".nii.gz"
         item["label"] = int(item["label"])
     #test_unhealthy_datalist = test_unhealthy_images_path
 

@@ -34,14 +34,53 @@ if n_drop > 0:
     count_high_nihss_1 = int(counts.get(1, 0))
     count_high_nihss_0 = int(counts.get(0, 0))
 
-# merge clinical data df with image ids df
-image_paths = glob.glob(ROOT_DIR+"datasets/StrokeUADiag_classification_inputs/stacked_*.nii.gz")
-image_ids = [os.path.basename(path).replace(".nii.gz", "").split('_')[-1] for path in image_paths]
 
-image_ids_df = pd.DataFrame(image_ids, columns=['participant_id'])
+# LARGE GROUP
+# SELECT PARAMS
 
-# make a new dataframe merging image_ids_df and participants_df on 'participant_id'
-final_df = pd.merge(image_ids_df, participants_df, on='participant_id', how='left')
+image_paths_large_select_params = glob.glob(ROOT_DIR+"datasets/StrokeUADiag_classification_inputs/large/select_params/stacked_*.nii.gz")
+image_ids_large_select_params = [os.path.basename(path).replace(".nii.gz", "").split('_')[-1] for path in image_paths_large_select_params]
+
+image_ids_large_select_params_df = pd.DataFrame({'participant_id': image_ids_large_select_params, 'image_path': image_paths_large_select_params})
+
+# MEDIUM GROUP
+# SELECT PARAMS
+
+image_paths_medium_select_params = glob.glob(ROOT_DIR+"datasets/StrokeUADiag_classification_inputs/medium/select_params/stacked_*.nii.gz")
+image_ids_medium_select_params = [os.path.basename(path).replace(".nii.gz", "").split('_')[-1] for path in image_paths_medium_select_params]
+
+image_ids_medium_select_params_df = pd.DataFrame({'participant_id': image_ids_medium_select_params, 'image_path': image_paths_medium_select_params})
+
+# LARGE GROUP
+# METRICS
+image_paths_large_metrics = glob.glob(ROOT_DIR+"datasets/StrokeUADiag_classification_inputs/large/metrics/stacked_*.nii.gz")
+image_ids_large_metrics = [os.path.basename(path).replace(".nii.gz", "").split('_')[-1] for path in image_paths_large_metrics]
+
+image_ids_large_metrics_df = pd.DataFrame({'participant_id': image_ids_large_metrics, 'image_path': image_paths_large_metrics})
+
+# MEDIUM GROUP
+# METRICS
+image_paths_medium_metrics = glob.glob(ROOT_DIR+"datasets/StrokeUADiag_classification_inputs/medium/metrics/stacked_*.nii.gz")
+image_ids_medium_metrics = [os.path.basename(path).replace(".nii.gz", "").split('_')[-1] for path in image_paths_medium_metrics]
+
+image_ids_medium_metrics_df = pd.DataFrame({'participant_id': image_ids_medium_metrics, 'image_path': image_paths_medium_metrics})
+
+
+
+# merge these df with participants_df on 'participant_id'
+image_ids_large_select_params_df['image_type'] = 'select_params'
+image_ids_large_metrics_df['image_type'] = 'metrics'
+image_ids_medium_select_params_df['image_type'] = 'select_params'
+image_ids_medium_metrics_df['image_type'] = 'metrics'
+
+all_images_df = pd.concat([
+    image_ids_large_select_params_df,
+    image_ids_large_metrics_df,
+    image_ids_medium_select_params_df,
+    image_ids_medium_metrics_df
+]).drop_duplicates(subset=['participant_id'])
+
+final_df = pd.merge(all_images_df, participants_df, on='participant_id', how='left')
 final_df.dropna(subset=["high_nihss"], inplace=True)
 
 # drop rows with exclude files
@@ -71,9 +110,17 @@ for cls in final_df["high_nihss"].unique():
     n_val = int(np.floor(n * val_frac))
     n_test = n - n_train - n_val
 
-    train_idx.extend(cls_idx[:n_train])
-    val_idx.extend(cls_idx[n_train:n_train + n_val])
-    test_idx.extend(cls_idx[n_train + n_val:])
+    # Ensure test subjects are only taken from rows with 'metrics' on the 'image_type' column
+    metrics_mask = final_df.loc[cls_idx, 'image_type'] == 'metrics'
+    metrics_idx = cls_idx[metrics_mask]
+    other_idx = cls_idx[~metrics_mask]
+
+    cls_test_idx = metrics_idx[:n_test]
+    remaining_idx = rng.permutation(np.concatenate((metrics_idx[n_test:], other_idx)))
+
+    train_idx.extend(remaining_idx[:n_train])
+    val_idx.extend(remaining_idx[n_train:n_train + n_val])
+    test_idx.extend(cls_test_idx)
 
 # Build dataframes
 train_final_df = final_df.loc[train_idx].reset_index(drop=True)
@@ -86,14 +133,14 @@ test_final_df = test_final_df.iloc[rng.permutation(len(test_final_df))].reset_in
 
 # ---------------------
 
-output_train_df = train_final_df[["participant_id", "high_nihss"]]
+output_train_df = train_final_df[["participant_id", "high_nihss", "image_path"]]
 output_csv_path = os.path.join(ROOT_DIR+"StrokeUADiag/data_splits_lists/soop", "train.csv")
 output_train_df.to_csv(output_csv_path, index=False)
 
-output_val_df = val_final_df[["participant_id", "high_nihss"]]
+output_val_df = val_final_df[["participant_id", "high_nihss", "image_path"]]
 output_csv_path = os.path.join(ROOT_DIR+"StrokeUADiag/data_splits_lists/soop", "val.csv")
 output_val_df.to_csv(output_csv_path, index=False)
 
-output_test_df = test_final_df[["participant_id", "high_nihss"]]
+output_test_df = test_final_df[["participant_id", "high_nihss", "image_path"]]
 output_csv_path = os.path.join(ROOT_DIR+"StrokeUADiag/data_splits_lists/soop", "test.csv")
 output_test_df.to_csv(output_csv_path, index=False)

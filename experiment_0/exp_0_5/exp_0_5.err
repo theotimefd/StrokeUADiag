@@ -1,0 +1,86 @@
+Loading dataset:   0%|          | 0/96 [00:00<?, ?it/s]Loading dataset:   1%|          | 1/96 [00:00<01:23,  1.13it/s]Loading dataset:   2%|▏         | 2/96 [00:01<01:10,  1.33it/s]Loading dataset:   3%|▎         | 3/96 [00:02<01:09,  1.33it/s]Loading dataset:   4%|▍         | 4/96 [00:02<01:06,  1.38it/s]Loading dataset:   5%|▌         | 5/96 [00:03<01:03,  1.43it/s]Loading dataset:   6%|▋         | 6/96 [00:04<01:06,  1.36it/s]Loading dataset:   7%|▋         | 7/96 [00:05<01:06,  1.34it/s]Loading dataset:   8%|▊         | 8/96 [00:05<01:01,  1.42it/s]Loading dataset:   9%|▉         | 9/96 [00:07<01:16,  1.13it/s]Loading dataset:  10%|█         | 10/96 [00:07<01:11,  1.21it/s]Loading dataset:  11%|█▏        | 11/96 [00:08<01:05,  1.29it/s]Loading dataset:  12%|█▎        | 12/96 [00:09<01:03,  1.31it/s]Loading dataset:  14%|█▎        | 13/96 [00:09<01:02,  1.33it/s]Loading dataset:  15%|█▍        | 14/96 [00:10<01:04,  1.28it/s]Loading dataset:  16%|█▌        | 15/96 [00:11<01:01,  1.32it/s]Loading dataset:  17%|█▋        | 16/96 [00:12<00:57,  1.38it/s]Loading dataset:  18%|█▊        | 17/96 [00:12<00:54,  1.44it/s]Loading dataset:  19%|█▉        | 18/96 [00:13<00:53,  1.47it/s]Loading dataset:  20%|█▉        | 19/96 [00:14<00:52,  1.47it/s]Loading dataset:  21%|██        | 20/96 [00:14<00:50,  1.49it/s]Loading dataset:  22%|██▏       | 21/96 [00:15<01:02,  1.20it/s]Loading dataset:  23%|██▎       | 22/96 [00:16<01:03,  1.17it/s]Loading dataset:  24%|██▍       | 23/96 [00:17<00:58,  1.26it/s]Loading dataset:  25%|██▌       | 24/96 [00:18<00:55,  1.30it/s]Loading dataset:  26%|██▌       | 25/96 [00:18<00:54,  1.30it/s]Loading dataset:  27%|██▋       | 26/96 [00:19<00:51,  1.36it/s]Loading dataset:  28%|██▊       | 27/96 [00:20<00:50,  1.37it/s]Loading dataset:  29%|██▉       | 28/96 [00:21<00:48,  1.39it/s]Loading dataset:  30%|███       | 29/96 [00:21<00:46,  1.44it/s]Loading dataset:  31%|███▏      | 30/96 [00:22<00:44,  1.48it/s]Loading dataset:  32%|███▏      | 31/96 [00:22<00:42,  1.53it/s]Loading dataset:  33%|███▎      | 32/96 [00:23<00:43,  1.46it/s]Loading dataset:  34%|███▍      | 33/96 [00:24<00:52,  1.20it/s]Loading dataset:  35%|███▌      | 34/96 [00:25<00:51,  1.21it/s]Loading dataset:  36%|███▋      | 35/96 [00:26<00:47,  1.30it/s]Loading dataset:  38%|███▊      | 36/96 [00:26<00:43,  1.39it/s]Loading dataset:  39%|███▊      | 37/96 [00:27<00:42,  1.40it/s]Loading dataset:  40%|███▉      | 38/96 [00:28<00:40,  1.43it/s]Loading dataset:  41%|████      | 39/96 [00:29<00:40,  1.39it/s]Loading dataset:  42%|████▏     | 40/96 [00:29<00:39,  1.41it/s]Loading dataset:  43%|████▎     | 41/96 [00:30<00:38,  1.44it/s]Loading dataset:  44%|████▍     | 42/96 [00:31<00:37,  1.42it/s]Loading dataset:  45%|████▍     | 43/96 [00:31<00:36,  1.45it/s]Loading dataset:  46%|████▌     | 44/96 [00:32<00:34,  1.50it/s]Loading dataset:  47%|████▋     | 45/96 [00:33<00:34,  1.46it/s]Loading dataset:  48%|████▊     | 46/96 [00:34<00:38,  1.31it/s]Loading dataset:  49%|████▉     | 47/96 [00:34<00:35,  1.37it/s]Loading dataset:  50%|█████     | 48/96 [00:35<00:33,  1.42it/s]Loading dataset:  51%|█████     | 49/96 [00:35<00:31,  1.49it/s]Loading dataset:  52%|█████▏    | 50/96 [00:36<00:29,  1.55it/s]Loading dataset:  53%|█████▎    | 51/96 [00:37<00:28,  1.55it/s]Loading dataset:  54%|█████▍    | 52/96 [00:37<00:28,  1.54it/s]Loading dataset:  55%|█████▌    | 53/96 [00:38<00:27,  1.54it/s]Loading dataset:  56%|█████▋    | 54/96 [00:39<00:31,  1.32it/s]Loading dataset:  57%|█████▋    | 55/96 [00:40<00:29,  1.38it/s]Loading dataset:  58%|█████▊    | 56/96 [00:40<00:29,  1.37it/s]Loading dataset:  59%|█████▉    | 57/96 [00:41<00:27,  1.42it/s]Loading dataset:  60%|██████    | 58/96 [00:42<00:26,  1.42it/s]Loading dataset:  61%|██████▏   | 59/96 [00:42<00:25,  1.45it/s]Loading dataset:  62%|██████▎   | 60/96 [00:43<00:24,  1.50it/s]Loading dataset:  64%|██████▎   | 61/96 [00:44<00:23,  1.50it/s]Loading dataset:  65%|██████▍   | 62/96 [00:44<00:22,  1.48it/s]Loading dataset:  66%|██████▌   | 63/96 [00:45<00:22,  1.46it/s]Loading dataset:  67%|██████▋   | 64/96 [00:46<00:21,  1.51it/s]Loading dataset:  68%|██████▊   | 65/96 [00:46<00:20,  1.53it/s]Loading dataset:  69%|██████▉   | 66/96 [00:47<00:19,  1.55it/s]Loading dataset:  70%|██████▉   | 67/96 [00:48<00:18,  1.53it/s]Loading dataset:  71%|███████   | 68/96 [00:48<00:18,  1.53it/s]Loading dataset:  72%|███████▏  | 69/96 [00:49<00:18,  1.48it/s]Loading dataset:  73%|███████▎  | 70/96 [00:50<00:17,  1.49it/s]Loading dataset:  74%|███████▍  | 71/96 [00:50<00:16,  1.55it/s]Loading dataset:  75%|███████▌  | 72/96 [00:51<00:15,  1.54it/s]Loading dataset:  76%|███████▌  | 73/96 [00:51<00:14,  1.57it/s]Loading dataset:  77%|███████▋  | 74/96 [00:52<00:14,  1.52it/s]Loading dataset:  78%|███████▊  | 75/96 [00:53<00:13,  1.54it/s]Loading dataset:  79%|███████▉  | 76/96 [00:53<00:12,  1.56it/s]Loading dataset:  80%|████████  | 77/96 [00:54<00:12,  1.48it/s]Loading dataset:  81%|████████▏ | 78/96 [00:55<00:12,  1.48it/s]Loading dataset:  82%|████████▏ | 79/96 [00:56<00:11,  1.49it/s]Loading dataset:  83%|████████▎ | 80/96 [00:56<00:10,  1.50it/s]Loading dataset:  84%|████████▍ | 81/96 [00:57<00:09,  1.50it/s]Loading dataset:  85%|████████▌ | 82/96 [00:58<00:09,  1.44it/s]Loading dataset:  86%|████████▋ | 83/96 [00:58<00:08,  1.47it/s]Loading dataset:  88%|████████▊ | 84/96 [00:59<00:08,  1.45it/s]Loading dataset:  89%|████████▊ | 85/96 [01:00<00:08,  1.37it/s]Loading dataset:  90%|████████▉ | 86/96 [01:00<00:06,  1.45it/s]Loading dataset:  91%|█████████ | 87/96 [01:01<00:06,  1.48it/s]Loading dataset:  92%|█████████▏| 88/96 [01:02<00:05,  1.53it/s]Loading dataset:  93%|█████████▎| 89/96 [01:02<00:04,  1.42it/s]Loading dataset:  94%|█████████▍| 90/96 [01:03<00:04,  1.44it/s]Loading dataset:  95%|█████████▍| 91/96 [01:04<00:03,  1.46it/s]Loading dataset:  96%|█████████▌| 92/96 [01:04<00:02,  1.51it/s]Loading dataset:  97%|█████████▋| 93/96 [01:05<00:01,  1.52it/s]Loading dataset:  98%|█████████▊| 94/96 [01:06<00:01,  1.56it/s]Loading dataset:  99%|█████████▉| 95/96 [01:06<00:00,  1.55it/s]Loading dataset: 100%|██████████| 96/96 [01:07<00:00,  1.57it/s]Loading dataset: 100%|██████████| 96/96 [01:07<00:00,  1.42it/s]
+Loading dataset:   0%|          | 0/20 [00:00<?, ?it/s]Loading dataset:   5%|▌         | 1/20 [00:00<00:12,  1.54it/s]Loading dataset:  10%|█         | 2/20 [00:01<00:11,  1.52it/s]Loading dataset:  15%|█▌        | 3/20 [00:01<00:11,  1.54it/s]Loading dataset:  20%|██        | 4/20 [00:02<00:10,  1.56it/s]Loading dataset:  25%|██▌       | 5/20 [00:03<00:10,  1.43it/s]Loading dataset:  30%|███       | 6/20 [00:04<00:09,  1.43it/s]Loading dataset:  35%|███▌      | 7/20 [00:04<00:09,  1.43it/s]Loading dataset:  40%|████      | 8/20 [00:05<00:08,  1.43it/s]Loading dataset:  45%|████▌     | 9/20 [00:06<00:07,  1.45it/s]Loading dataset:  50%|█████     | 10/20 [00:06<00:06,  1.51it/s]Loading dataset:  55%|█████▌    | 11/20 [00:07<00:06,  1.47it/s]Loading dataset:  60%|██████    | 12/20 [00:08<00:05,  1.51it/s]Loading dataset:  65%|██████▌   | 13/20 [00:08<00:04,  1.55it/s]Loading dataset:  70%|███████   | 14/20 [00:09<00:03,  1.55it/s]Loading dataset:  75%|███████▌  | 15/20 [00:10<00:03,  1.49it/s]Loading dataset:  80%|████████  | 16/20 [00:10<00:02,  1.49it/s]Loading dataset:  85%|████████▌ | 17/20 [00:11<00:02,  1.45it/s]Loading dataset:  90%|█████████ | 18/20 [00:12<00:01,  1.50it/s]Loading dataset:  95%|█████████▌| 19/20 [00:12<00:00,  1.42it/s]Loading dataset: 100%|██████████| 20/20 [00:13<00:00,  1.49it/s]Loading dataset: 100%|██████████| 20/20 [00:13<00:00,  1.48it/s]
+This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+Loading dataset:   0%|          | 0/22 [00:00<?, ?it/s]Loading dataset:   0%|          | 0/22 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/nibabel/loadsave.py", line 101, in load
+    stat_result = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/bettik/PROJECTS/pr-gin5_aini/fehrdelt/datasets/StrokeUADiag_classification_inputs/stacked_sub-344.nii.gz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/transforms/transform.py", line 150, in apply_transform
+    return _apply_transform(transform, data, unpack_items, lazy, overrides, log_stats)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/transforms/transform.py", line 98, in _apply_transform
+    return transform(data, lazy=lazy) if isinstance(transform, LazyTrait) else transform(data)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/transforms/io/dictionary.py", line 163, in __call__
+    data = self._loader(d[key], reader)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/transforms/io/array.py", line 263, in __call__
+    img = reader.read(filename)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/data/image_reader.py", line 1088, in read
+    img = nib.load(name, **kwargs_)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/nibabel/loadsave.py", line 103, in load
+    raise FileNotFoundError(f"No such file or no access: '{filename}'")
+FileNotFoundError: No such file or no access: '/bettik/PROJECTS/pr-gin5_aini/fehrdelt/datasets/StrokeUADiag_classification_inputs/stacked_sub-344.nii.gz'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/StrokeUADiag/classification/launch_pipeline.py", line 59, in <module>
+    main()
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/StrokeUADiag/classification/launch_pipeline.py", line 51, in main
+    launch_test(args)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/StrokeUADiag/classification/test_classification.py", line 82, in launch_test
+    test_ds = CacheDataset(data=test_files, transform=test_transforms)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/data/dataset.py", line 809, in __init__
+    self.set_data(data)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/data/dataset.py", line 836, in set_data
+    self._cache = self._fill_cache(indices)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/data/dataset.py", line 865, in _fill_cache
+    return list(tqdm(p.imap(self._load_cache_item, indices), total=len(indices), desc="Loading dataset"))
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/usr/lib/python3.9/multiprocessing/pool.py", line 870, in next
+    raise value
+  File "/usr/lib/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/data/dataset.py", line 878, in _load_cache_item
+    item = self.transform(item, end=first_random, threading=True)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/transforms/compose.py", line 346, in __call__
+    result = execute_compose(
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/transforms/compose.py", line 116, in execute_compose
+    data = apply_transform(
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/monai/transforms/transform.py", line 180, in apply_transform
+    raise RuntimeError(f"applying transform {transform}") from e
+RuntimeError: applying transform <monai.transforms.io.dictionary.LoadImaged object at 0x7fadd80f48b0>
+E0430 17:54:17.419766 107615 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 108157) of binary: /bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/bin/python3
+Traceback (most recent call last):
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/bettik/PROJECTS/pr-gin5_aini/fehrdelt/environments/ddpm_env/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/bettik/PROJECTS/pr-gin5_aini/fehrdelt/StrokeUADiag/classification/launch_pipeline.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-30_17:54:17
+  host      : bigfoot6.u-ga.fr
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 108157)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
